@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>平台</title>
+    <style type="text/css">
+        body {
+            font-size: 12px;
+        }
+
+        .nav > li > a {
+            padding: 5px 10px;
+        }
+
+        .tab-content {
+            padding-top: 3px;
+        }
+    </style>
+    <link rel="stylesheet" href="/static/bootstrap-3.3.7/css/bootstrap.css">
+    <link rel="stylesheet" href="/static/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="/static/sidebar-menu/sidebar-menu.css">
+
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <script src="/static/sidebar-menu/sidebar-menu.js"></script>
+    <script src="/static/bootstrap-3.3.7/js/bootstrap-tab.js"></script>
+
+
+
+</head>
+<body>
+<div class="navbar navbar-default" id="navbar">
+    <div class="navbar-container" id="navbar-container">
+        <div class="navbar-header pull-left">
+            <a href="#" class="navbar-brand">
+                <small>
+                    <i class="icon-book"></i>
+                    图书管理系统
+                </small>
+            </a>
+        </div>
+
+        <div class="navbar-header pull-right" role="navigation">
+            <div style="background-color: #579ec8 !important; color: #fff; height:45px; line-height:45px; margin-right: 50px;">
+                &nbsp;&nbsp;
+                &nbsp;&nbsp;欢迎光临,<span id="topName"></span>&nbsp;&nbsp;
+
+                <a href="/login/logout" style="color: #fff;">
+                    <i class="icon-off"></i>
+                    退出
+                </a>&nbsp;&nbsp;
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<div class="main-container" id="main-container">
+    <div class="main-container-inner">
+        <a class="menu-toggler" id="menu-toggler" href="#">
+            <span class="menu-text"></span>
+        </a>
+        <div class="sidebar" id="sidebar">
+            <ul class="nav nav-list" id="menu"></ul>
+            <div class="sidebar-collapse" id="sidebar-collapse">
+                <i class="icon-double-angle-left" data-icon1="icon-double-angle-left" data-icon2="icon-double-angle-right"></i>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="page-content">
+                <div class="row">
+                    <div class="col-xs-12" style="padding-left:5px;">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li class="active"><a href="#Index" role="tab" data-toggle="tab">首页</a></li>
+                        </ul>
+                        <div class="tab-content" style="height:865px">
+                            <div role="tabpanel" class="tab-pane active" id="Index" style="height:100%">
+                                <h2>欢迎进入图书管理系统</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<script src="/static/ace/ace.min.js"></script>
+<script src="/static/ace/ace-extra.min.js"></script>
+<script src="/static/js/indexAdmin.js"></script>
+</body>
+</html>

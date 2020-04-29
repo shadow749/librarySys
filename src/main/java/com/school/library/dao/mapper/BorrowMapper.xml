@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.school.library.dao.BorrowDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.school.library.bean.Borrow">
+        <id column="id" property="id" />
+        <result column="lib_card" property="libCard" />
+        <result column="borrow_time" property="borrowTime" />
+        <result column="retrun_time" property="retrunTime" />
+        <result column="user_id" property="userId" />
+        <result column="user_type" property="userType" />
+        <result column="code" property="code" />
+        <result column="num" property="num" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, lib_card AS libCard, borrow_time AS borrowTime, retrun_time AS retrunTime, user_id AS userId, user_type AS userType, code, num
+    </sql>
+
+</mapper>

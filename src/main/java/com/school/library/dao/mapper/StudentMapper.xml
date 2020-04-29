@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.school.library.dao.StudentDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.school.library.bean.Student">
+        <id column="id" property="id" />
+        <result column="stu_num" property="stuNum" />
+        <result column="name" property="name" />
+        <result column="password" property="password" />
+        <result column="create_time" property="createTime" />
+        <result column="college" property="college" />
+        <result column="lib_card" property="libCard" />
+        <result column="phone" property="phone" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, stu_num AS stuNum, name, password, create_time AS createTime, college, lib_card AS libCard, phone
+    </sql>
+
+</mapper>
