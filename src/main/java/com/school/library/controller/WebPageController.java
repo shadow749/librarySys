@@ -28,16 +28,24 @@ public class WebPageController {
     public String admin (   ){
         return "admin";
     }
+
     @RequestMapping("/go/stu")
     public String stu (   ){
         return "stu";
     }
+
     @RequestMapping("/go/book")
     public String book (   ){
         return "book";
     }
+
     @RequestMapping("/go/borrow")
     public String borrow (   ){
         return "borrow";
+    }
+
+    @RequestMapping("/go/mineBorrow")
+    public String mineBorrow (   ){
+        return "mineBorrow";
     }
 }

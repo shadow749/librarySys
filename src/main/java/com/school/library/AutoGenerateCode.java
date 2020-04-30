@@ -16,8 +16,8 @@ public class AutoGenerateCode {
         // 全局配置定义
         GlobalConfig gc = new GlobalConfig();
 
-        gc.setOutputDir("E:\\ws_idea\\library\\src\\main\\java\\"); // 设置存储路径
-//        gc.setOutputDir("F:\\ws_idea\\temp\\"); // 设置存储路径
+//        gc.setOutputDir("E:\\ws_idea\\library\\src\\main\\java\\"); // 设置存储路径
+        gc.setOutputDir("F:\\ws_idea\\"); // 设置存储路径
         gc.setFileOverride(true);
         gc.setActiveRecord(false);
         gc.setEnableCache(false);// XML 二级缓存
@@ -57,7 +57,7 @@ public class AutoGenerateCode {
         // strategy.setCapitalMode(true);// 全局大写命名 ORACLE 注意
         // strategy.setTablePrefix(new String[] { "tlog_", "tsys_" });// 此处可以修改为您的表前缀
         strategy.setNaming(NamingStrategy.underline_to_camel);// 表名生成策略
-         strategy.setInclude(new String[] { "admin","book","student","borrow"}); // 需要生成的表
+         strategy.setInclude(new String[] { "borrow"}); // 需要生成的表
         // strategy.setExclude(new String[]{"test"}); // 排除生成的表
         mpg.setStrategy(strategy);
 

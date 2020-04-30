@@ -26,13 +26,13 @@ public class Borrow implements Serializable {
 
     private String id;
     @TableField("borrow_time")
-    @JSONField(format = "yyyy-MM-dd HH:mm:ss")//json日期格式转换
-    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")//参数日期格式转换
+    @JSONField(format = "yyyy-MM-dd")//json日期格式转换
+    @DateTimeFormat(pattern = "yyyy-MM-dd")//参数日期格式转换
     private Date borrowTime;
 
     @TableField("retrun_time")
-    @JSONField(format = "yyyy-MM-dd HH:mm:ss")//json日期格式转换
-    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")//参数日期格式转换
+    @JSONField(format = "yyyy-MM-dd")//json日期格式转换
+    @DateTimeFormat(pattern = "yyyy-MM-dd")//参数日期格式转换
     private Date retrunTime;
 
     @TableField("user_id")

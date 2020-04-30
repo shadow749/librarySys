@@ -12,7 +12,7 @@ var dataStu=
         id: '2',
         text: '我的借阅',
         icon: 'icon-credit-card',
-        url: '/go/borrow',
+        url: '/go/mineBorrow',
 }];
 var dataAdmin=
     [{
@@ -32,7 +32,7 @@ var dataAdmin=
         url: '/go/admin',
     }, {
         id: '4',
-        text: '图书借阅管理',
+        text: '图书借阅查询',
         icon: 'icon-credit-card',
         url: '/go/borrow',
     }];
