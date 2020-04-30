@@ -18,5 +18,15 @@
     <sql id="Base_Column_List">
         id, stu_num AS stuNum, name, password, create_time AS createTime, college, lib_card AS libCard, phone
     </sql>
-
+    <select id="findPage"  resultMap="BaseResultMap">
+        select * from student
+        <where>
+            <if test="stu.name !=null and stu.name !=''">
+                and name like '%${stu.name}%'
+            </if>
+            <if test="stu.stuNum !=null and stu.stuNum !=''">
+                and stu_num like '%${stu.stuNum}%'
+            </if>
+        </where>
+    </select>
 </mapper>

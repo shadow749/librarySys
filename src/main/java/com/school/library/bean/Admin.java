@@ -1,5 +1,7 @@
 package com.school.library.bean;
 
+import com.baomidou.mybatisplus.annotations.TableId;
+import com.baomidou.mybatisplus.enums.IdType;
 import lombok.Data;
 import lombok.ToString;
 
@@ -19,9 +21,11 @@ public class Admin implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    private String id;
+    @TableId(value = "id", type = IdType.AUTO)
+    private Integer id;
     private String name;
     private String password;
+    private String card;
     private String email;
     private String phone;
     /**

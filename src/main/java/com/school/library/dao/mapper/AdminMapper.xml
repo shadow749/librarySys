@@ -18,5 +18,12 @@
     <sql id="Base_Column_List">
         id, name, email, phone, title, department, sex, position
     </sql>
-
+    <select id="findPage"  resultMap="BaseResultMap">
+        select * from admin
+        <where>
+            <if test="admin.name !=null and admin.name !=''">
+                and name like '%${admin.name}%'
+            </if>
+        </where>
+    </select>
 </mapper>

@@ -24,4 +24,20 @@ public class WebPageController {
     public String index (   ){
         return "indexAdmin";
     }
+    @RequestMapping("/go/admin")
+    public String admin (   ){
+        return "admin";
+    }
+    @RequestMapping("/go/stu")
+    public String stu (   ){
+        return "stu";
+    }
+    @RequestMapping("/go/book")
+    public String book (   ){
+        return "book";
+    }
+    @RequestMapping("/go/borrow")
+    public String borrow (   ){
+        return "borrow";
+    }
 }
