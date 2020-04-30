@@ -14,7 +14,7 @@ import org.springframework.stereotype.Controller;
  * @since 2020-04-29
  */
 @Controller
-@RequestMapping("/library/borrow")
+@RequestMapping("/do/borrow")
 public class BorrowController {
 
 }

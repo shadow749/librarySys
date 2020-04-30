@@ -10,7 +10,7 @@ var dataStu=
         url: '/go/book',//点击菜单要打开的页面，如果是一级菜单，url要为空
     }, {
         id: '2',
-        text: '图书借阅',
+        text: '我的借阅',
         icon: 'icon-credit-card',
         url: '/go/borrow',
 }];

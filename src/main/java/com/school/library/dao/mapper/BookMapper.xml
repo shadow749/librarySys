@@ -24,5 +24,16 @@
     <sql id="Base_Column_List">
         id, storage_num AS storageNum, input_num AS inputNum, code, address, virtual, statue, opera_time AS operaTime, admin_id AS adminId, book_num AS bookNum, shiyang, remark, name, author
     </sql>
-
+    <select id="findPage"  resultMap="BaseResultMap">
+        select * from book
+        <where>
+            <if test="book.name !=null and book.name !=''">
+                and name like '%${book.name}%'
+            </if>
+            <if test="book.author !=null and book.author !=''">
+                and author like '%${book.author}%'
+            </if>
+        </where>
+        order by id asc
+    </select>
 </mapper>

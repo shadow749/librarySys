@@ -10,7 +10,10 @@
         <result column="retrun_time" property="retrunTime" />
         <result column="user_id" property="userId" />
         <result column="user_type" property="userType" />
-        <result column="code" property="code" />
+        <result column="stu_num" property="stuNum" />
+        <result column="book_id" property="bookId" />
+        <result column="book_code" property="bookCode" />
+        <result column="book_name" property="bookName" />
         <result column="num" property="num" />
     </resultMap>
 

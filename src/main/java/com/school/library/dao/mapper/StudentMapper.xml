@@ -28,5 +28,6 @@
                 and stu_num like '%${stu.stuNum}%'
             </if>
         </where>
+        order by create_time desc
     </select>
 </mapper>
